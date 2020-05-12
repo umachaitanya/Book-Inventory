@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Book Inventory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onClickAdd();" autocomplete="off">
+                    <div>
+                        <label>Title</label>
+                        <input type="text" id="title" name="title" placeholder="Name of the Book..">
+                    </div>
+                    <div>
+                        <label>Genre</label>
+                        <input type="text" id="genre" name="genre" placeholder="genre of the Book..">
+                    </div>
+                    <div>
+                        <label>Quantity</label>
+                        <input type="text" id="quantity" name="quantity" placeholder="quantity of the Book..">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="ADD/UPDATE">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="bookList">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Genre</th>
+                            <th>Quantity</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
